@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZEENLHzJ6RP5K2wUivzI+" crossorigin="anonymous">
     <style>
+        .btn-primary {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+
         body {
             background-color: beige;
         }
@@ -21,47 +27,76 @@
             background-size: cover;
             height: 500px;
 
-            .card-img-top {
-                width: 100%;
-                height: auto;
-            }
+        }
+
+        h1 {
+            font-size: 300%;
+        }
+
+        .card-img-top {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h5 {
+            font-size: 5em;
+            text-align: center;
+        }
+
+        p {
+            word-wrap: break-word;
+            max-width: 800px;
+
+            margin: 0 auto;
+
+        }
+
+        .card-img-top {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .jumbotron {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
     </style>
 </head>
 
-
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Ruokablogi</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse flex-row" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Reseptit</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Tuotteet</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Erikoisruokavaliot</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Ravintola-arvostelut</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <img src="kuva2.jpg">
             <h1 class="display-4">Tervetuloa ruokablogiin</h1>
             <p class="lead">Löydä uusia reseptejä, tutustu tuotteisiin, erikoisruokavalioihin ja
                 ravintola-arvosteluihin.</p>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Ruokablogi</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-row" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Index.html">Koti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Reseptit.html">Reseptit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Erikois.html">Erikoisruokavaliot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Arvostelu.html">Ravintola-arvostelut</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </div>
 
@@ -72,54 +107,32 @@
                     <img class="card-img-top" src="kuva1.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Reseptit</h5>
-                        <p class="card-text">Löydä uusia ja herkullisia reseptejä.</p>>
+                        <img class="card-img-top" src="kuva4.jpg" alt="Card image cap">
                         <div class="jumbotron jumbotron-fluid">
                             <div class="container">
-                                <h1 class="display-4">Tervetuloa ruokablogiin</h1>
-                                <p class="lead">Löydä uusia reseptejä, tutustu tuotteisiin, erikoisruokavalioihin ja
-                                    ravintola-arvosteluihin.</p>
+                                <p class="card-text">Löydä uusia ja herkullisia reseptejä.</p>
+                                <a href="Reseptit.html" class="btn btn-primary">Katso reseptit</a>
                             </div>
                         </div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-4 mb-4">
                                     <div class="card">
-                                        <img class="card-img-top" src="kuva3.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Reseptit</h5>
-                                            <p class="card-text">Löydä uusia ja herkullisia reseptejä.</p>
-                                            <a href="#" class="btn btn-primary">Katso reseptit</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="kuva4.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Tuotteet</h5>
-                                            <p class="card-text">Tutustu herkullisiin tuotteisiin.</p>
-                                            <a href="#" class="btn btn-primary">Katso tuotteet</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="kuva6.jpg" alt="Card image cap">
                                         <div class="card-body">
                                             <h5 class="card-title">Erikoisruokavaliot</h5>
-                                            <p class="card-text">Tutustu erikoisruokavalioihin ja löydä sopivia
-                                                reseptejä.</p>
-                                            <a href="#" class="btn btn-primary">Katso erikoisruokavaliot</a>
+                                            <img class="card-img-top" src="kuva3.jpg" alt="Card image cap">
+                                            <p class="card-text">Löydä tietoa erikoisruokavalioista</p>
+                                            <a href="Erikois.html" class="btn btn-primary">Erikoisruokavalioihin</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4 mb-4">
                                     <div class="card">
-                                        <img class="card-img-top" src="kuva5.jpg" alt="Card image cap">
                                         <div class="card-body">
                                             <h5 class="card-title">Ravintolat</h5>
+                                            <img class="card-img-top" src="kuva5.jpg" alt="Card image cap">
                                             <p class="card-text">Lue arvosteluja ja löydä uusia ravintoloita.</p>
-                                            <a href="#" class="btn btn-primary">Katso ravintolat</a>
+                                            <a href="Arvostelu.html" class="btn btn-primary">Katso ravintolat</a>
                                         </div>
                                     </div>
                                 </div>
